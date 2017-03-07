@@ -1,0 +1,181 @@
+@import "susy";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$susy: (
+    columns: 10, // numero de colunas do grid
+    container: 1180px, // largura do container
+    //debug: (image: show), // exibe as colunas
+);
+
+.container {
+    @include container();
+}
+
+
+#site-heade {
+
+    & {
+        width: 100%;
+        background-color: rgba(100, 10,10, 0.5);
+    }
+
+
+    .logo {
+        
+        & {
+            float: left;
+            padding: 1rem;
+            line-height: 2rem;
+        }
+        
+
+        a {
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-size: 24px;
+            color: rgba(0, 0, 200, 0.6);
+            text-transform: uppercase;
+            // background-color: rgba(200, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+
+        a:hover {
+            color: rgba(0, 0, 100, 0.8);
+        }
+    }
+
+    nav {
+        
+        & {
+            float: right;
+        }
+
+        li {
+            
+            & {
+                list-style: none;
+                float: left;
+                margin-left: 2rem;
+                line-height: 2rem;
+                padding-top: 1rem;
+            }
+
+            a {
+                text-decoration: none;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: rgba(0, 0, 140, 0.4);
+            }        
+        }
+
+    }
+
+}
+
+img {
+    width: 100%;
+}
+
+.banner {
+    @include span(10 of 10);
+    margin: gutter() 0;
+    height: 100%;
+}
+
+.sidebar {
+    
+    &{  
+      @include span(2 of 10);
+    }
+    
+    ul {
+
+        margin: 0;
+        padding: 1.2rem;
+    
+    }
+
+    li {
+        & {
+            list-style: none;
+            font-size: 1.1rem;
+            border-bottom: 2px dotted #c6c6c6;
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 1rem .5rem;
+        color: #333;
+        line-height: 2;
+        text-decoration: none;
+    }
+
+}
+
+.content {
+
+    & {
+        @include span(10 of 10);
+    }
+
+    .content-item {
+        @include gallery(2 of 10);
+        margin-bottom: gutter();
+    }
+
+}
+
+#footer {
+
+  & {
+      width: 100%;
+      float: left;
+      background-color: rgba(0, 0, 100, 0.8);
+  }
+
+  .site-footer {
+    margin-top: 2rem;
+    padding: 0.6rem 0;
+    @include span(8 of 8);
+    width: 100%;
+    float: left;
+}
+
+.coluna1 {
+
+    & {
+        @include span(3 of 10 last);
+    }
+
+    ul {
+        & {
+            width: 100%;
+            float: left;
+            margin-left: 1rem;
+        }
+
+        li { 
+            list-style: none;
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 10px 0;
+        }
+    }
+    
+
+}
+
+}
+
