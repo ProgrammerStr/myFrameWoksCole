@@ -1,0 +1,173 @@
+@import 'reset.css';
+
+.sized {
+
+	width: 100%;
+	max-width: 1180px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+.flexy {
+
+	display: flex;
+	flex-direction: row;
+
+} 
+
+/* HEADER */
+
+#head {
+
+	width: 100%;
+	float: left;
+	background-color: rgba(120, 0, 0, 0.5);
+}
+
+#head .title {
+	flex: 1;
+	text-align: center;
+}
+
+#head .title h1 {
+	color: rgba(200, 200, 200, 0.7);
+	font-size: 2rem;
+	padding: 1rem 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/* HEADER */
+
+#section01 {
+
+	width: 100%;
+	float: left;
+}
+
+#section01 .box01 {
+	flex: 1 0 auto;
+	background-color: rgba(0, 0, 100, 0.3);
+	padding: 4rem 0;
+	text-align: center;
+	border-right: 1px solid #FFF;
+}
+
+#section01 .box01 span {
+	font-size: 1rem;
+	color: rgba(0, 0, 200, 0.5);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+}
+
+#section01 .box02 {
+	flex: 1 0 auto;
+	background-color: rgba(0, 0, 100, 0.3);
+	padding: 4rem 0;
+	text-align: center;
+	border-right: 1px solid #FFF;
+}
+
+#section01 .box02 span {
+	font-size: 1rem;
+	color: rgba(0, 0, 200, 0.5);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+}
+
+#section01 .box03 {
+	flex: 1 0 auto;
+	background-color: rgba(0, 0, 100, 0.3);
+	padding: 4rem 0;
+	text-align: center;
+}
+
+#section01 .box03 span {
+	font-size: 1rem;
+	color: rgba(0, 0, 200, 0.5);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+}
+
+#section02 {
+
+	width: 100%;
+	float: left;
+	background: rgba(100, 100, 100, 0.2);
+}
+
+#section02 .box01 {
+
+	flex: 1;
+	background-color: rgba(120, 0, 0, 0.5);
+	padding: 4rem 0;
+	text-align: center;
+	flex-flow: row;
+}
+
+#section02 .box01 span {
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+}
+
+#section02 .box02 {
+
+	flex: 1;
+	background-color: rgba(0, 120, 0, 0.5);
+	padding: 4rem 0;
+	text-align: center;
+	flex-flow: row;
+}
+
+#section02 .box02 span {
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+
+}
+
+#section02 .box03 {
+
+	flex: 1;
+	background-color: rgba(0, 0, 120, 0.5);
+	padding: 4rem 0;
+	text-align: center;
+	flex-flow: row;
+}
+
+#section02 .box03 span {
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+}
+
+#section02 .box04 {
+	flex: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 4rem 0;
+	text-align: center;
+	flex-flow: row;
+}
+
+#section02 .box04 span {
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px){
+
+	
+}

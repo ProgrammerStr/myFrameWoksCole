@@ -1,0 +1,50 @@
+.road {
+  width: 100%;
+  float: left;
+  height: 200px;
+  background-color: #CCC;
+  position: relative;
+  overflow: hidden;
+}
+
+.road h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: red;
+  z-index: 10;
+  opacity: 1;
+}
+
+.car01 {
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: -10%;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.car02{
+    width: 100px;
+    height: 100px;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    left: -110px;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.car03{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: -210px;
+  opacity: 0.3;
+  z-index: 1;
+}

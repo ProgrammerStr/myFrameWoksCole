@@ -10,23 +10,38 @@
 // init - inicia as funções separadas
 
 // C O D E  B Y - G A B R I E L  P A D U A  |T H & - C # D E - S T R @ N G E|
-(function($, win, doc, myVar){
-'use strict';
 
-myVar = {
+// V A R I A V E L  P R I N C I P A L
+var Sapp = {};
 
-};
+// M O D U L O  E N C A P S U L A D O 
+var module01 = (function($, win, doc, Sapp){
 
-myVar.init = function() {
+			'use strict';
 
-};
+			Sapp = {
+
+				 string  : 'teste 1',
+
+			};
+
+			Sapp.init = function() {
+
+				// I N I C I A  O  E V E N T O  P Ó S  - C A R R E G A M E N T 0
+			  Sapp.listen();
+
+			};
+
+			Sapp.listen = function(){
+
+			};
 
 
-$(doc).ready(function(){
+			$(doc).ready(function(){
 
-	myVar.init();
+				Sapp.init();
 
-});
+			});
 
 
 }(jQuery, window, document, 'Private'));
